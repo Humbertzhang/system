@@ -40,7 +40,11 @@ int main() {
             }
         }
     }
-	usleep(5000);
+	usleep(1000);
+	sem_destroy(&barberready);
+	sem_destroy(&personready);
+	sem_destroy(&setmutex);
+	
     return 0;
 }
 
